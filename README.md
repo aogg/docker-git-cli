@@ -2,6 +2,11 @@
 通过docker封装git执行命令，这样就不需要本地下载git了，也能解决centos的yum安装不是最新版本的问题
 
 
+https://hub.docker.com/r/adockero/git-cli
+[![git-cli](http://dockeri.co/image/adockero/git-cli)](https://hub.docker.com/r/adockero/git-cli)
+
+
+
 # 介绍
 
 1、基于docker实现，容器基础镜像用的是debian。其中每次只需git.sh都会通过新容器的方式执行git命令，所以git配置文件会通过数据卷来存储。  
