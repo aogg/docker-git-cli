@@ -41,6 +41,11 @@ for dirIndex in ${!notVolumnArr[@]};do
     fi
 done;
 
+if [ $openDir === '/root' ];then
+    volumnString='';
+    break;
+fi
+
 # -v "${volumnData}/etc/gitflow_export:/etc/gitflow_export" \
 # -v "${volumnData}/etc/gitignore_global:/etc/gitignore_global" \
 docker run -it $envString --rm \
