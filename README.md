@@ -15,6 +15,18 @@ https://hub.docker.com/r/adockero/git-cli
 4、执行git命令时会共享当前打开的文件夹，正确使用还是要去到项目文件夹中。同时要留意windows for docker和mac for docker的共享数据卷是否包含当前文件夹否则会报错
 
 
+# 使用
+```bash
+# 下载git.sh命令
+wget -P $(pwd)/git-cli/ https://raw.githubusercontent.com/aogg/docker-git-cli/master/git.sh
+# 添加软链接到path
+ln -s $(pwd)/git.sh /usr/bin/git
+# 第一次执行
+git
+```
+
+
+
 # 小技巧
 
 ## 1、设置中文支持
