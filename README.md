@@ -18,13 +18,28 @@ https://hub.docker.com/r/adockero/git-cli
 # 使用
 ```bash
 # 下载git.sh命令
-wget -P $(pwd)/git-cli/ https://raw.githubusercontent.com/aogg/docker-git-cli/master/git.sh
+# gitee
+wget -P $(pwd)/git-cli/ -N https://gitee.com/ao-lol/docker-git-cli/raw/master/git.sh
+# github
+# wget -P $(pwd)/git-cli/ -N https://raw.githubusercontent.com/aogg/docker-git-cli/master/git.sh
 # 添加软链接到path
 ln -s $(pwd)/git.sh /usr/bin/git
 # 第一次执行
 git
 ```
 
+## 更新git
+```bash
+# 下载git.sh命令
+# gitee
+wget -P $(pwd)/git-cli/ -N https://gitee.com/ao-lol/docker-git-cli/raw/master/git.sh
+# github
+# wget -P $(pwd)/git-cli/ -N https://raw.githubusercontent.com/aogg/docker-git-cli/master/git.sh
+# 添加软链接到path
+docker pull adockero/git-cli
+# 检查
+git
+```
 
 
 # 小技巧
