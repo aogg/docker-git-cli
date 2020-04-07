@@ -41,7 +41,7 @@ for dirIndex in ${!notVolumnArr[@]};do
     fi
 done;
 
-if [ $openDir === '/root' ];then
+if [ $openDir == '/root' ];then
     volumnString='';
     break;
 fi
