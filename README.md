@@ -41,6 +41,10 @@ docker pull adockero/git-cli
 git
 ```
 
+## 注意
+1、暂不支持管道|
+2、同样也不支持nohup命令
+
 
 # 小技巧
 
